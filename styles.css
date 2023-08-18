@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     background-color: #e9c1559d;
+    scroll-behavior: smooth;
 }
 .container-header {
     display: flex;
@@ -29,6 +30,13 @@ body {
 ul li {
     display: inline;
     padding: 0 2rem;
+}
+#about-us {
+    margin-bottom: 1.3rem;
+    padding: .3rem .4rem;
+    box-shadow: 5px 2px 8px 3px #010202;
+    width: 50%;
+    height: 10vh;
 }
 
 button {
