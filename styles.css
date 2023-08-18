@@ -2,12 +2,11 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(./imgs/contact-us.jpg);
-    background-position: center;
+    background-color: #e9c1559d;
 }
 .container-header {
     display: flex;
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding: 3rem auto;
     width: 90%;
     height: 10vh;
@@ -34,15 +33,18 @@ ul li {
 
 button {
     background-color: #ffffff00;
-    color: #fff;
+    color: #50505062;
     font-weight: bolder;
-    width: 8.5em;
+    width: 9.5em;
     height: 2.9em;
     border: #010202 0.3px solid;
     border-radius: 11px;
     text-align: right;
     transition: all 0.6s ease;
     font-family: Kanit, 'sans-serif';
+    -webkit-box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
 
 }
 button:hover {
@@ -70,46 +72,146 @@ button svg:hover {
     border-radius: 15%;
 }
 .hero-image img {
+    width: 90%;
     border-radius: 10%;
-    box-shadow: 0 0 5px #08080e;
+    -webkit-box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
 }
 .middle-page-section {
     display: flex;
+    width: 90%;
     margin: 3.5rem 4rem;
-    
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    opacity: .9;
+    -webkit-box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
+    box-shadow: 8x 15px 35px -1px rgba(0,0,0,0.75);
+    background-image: url(./imgs/contact-us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+    object-fit: cover;
 }
+
 .middle-page-section p {
-    font-family: Kanit, sans-serif;
-    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bolder;
+    color: #000000b0;
+    z-index: 300;
+    padding: 1.1em 2em;
+    letter-spacing: .09em;
+    text-align: center;
+    font-size:clamp(1.4rem, 2rem, 3rem);
 }
 .middle-page-section article {
     margin: 1.4rem 0;
     font-family: Kanit, sans-serif;
-    display: block;
+    display: flex;
+    justify-content: center;
+    -webkit-box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
+    box-shadow: 5x 10px 0px 1px rgba(0,0,0,0.75);
 }
 .middle-page-section article:nth-child(3) {
-    transform: translateX(20%);
+    transform: translateX(5%);
+    overflow: hidden;
 }
 .middle-page-section article:nth-child(4) {
-    transform: translateX(42%);
+    transform: translateX(8%);
+    overflow: hidden;
+    
 }
 .middle-page-section article p {
-    border: .1em solid #010202;
-    padding: 3px 1.2em;
+    padding: 3px 2rem;
     display: inline;
-    border-radius: 1.3em;
+    border-radius: 1em;
+    color: #ffffffbe;
+}
+.carousel.slide {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 .carousel-item img {
-    width: 70%;
+    width: 100%;
     height: 100vh;
 }
 .carousel-control-next, .carousel-control-prev {
     margin: auto;
-    padding: 1.2em;
+    padding: 3.3em 0;
     
 }
 .carousel-control-next span, .carousel-control-prev span {
-    border: 1px solid #010202;
     padding: 1.5em;
     border-radius: 50%;
+}
+footer {
+    height: 40vh;
+    width: 100%;
+}
+.container-footer {
+    background-image: url(./imgs/footer-image.png);
+    width: 130%;
+    height: 180%;
+    background-position: left center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+.container-footer a {   
+    display: flex;
+    justify-content: center;
+    margin: 2.2rem 0;
+    text-decoration:none ;
+}
+a i:first-child {
+    margin-top: 2rem;
+}
+a i {
+    font-size: 1.8rem;
+    display: flex;
+    margin-bottom: 4rem;
+    align-items: center;
+    color: #9da17a;
+    
+}
+@media only screen and (width < 900px) {
+    .nav-menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-header img {
+        width: 80%;
+        position: fixed;
+        height: 5vh;
+        margin: .8rem 0;
+    }
+}
+
+@media only screen and (width < 700px) {
+    .middle-page-section {
+        text-align: center;
+        margin: 1.2rem auto;
+    }
+    .middle-page-section article p {
+        padding: 3px 0;
+    }
+    .middle-page-section article:nth-child(3) {
+        transform: translate(0);
+    }
+    .middle-page-section article:nth-child(4) {
+        transform: translate(0);
+    }
+    .carousel.slide {
+        width: 100%
+    }
+    .carousel-item img {
+        width: 100%;
+        height: 100vh;
+    }
+    
 }
