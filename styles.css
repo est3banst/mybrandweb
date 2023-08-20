@@ -36,7 +36,23 @@ ul li {
     padding: .3rem .4rem;
     box-shadow: 5px 2px 8px 3px #010202;
     width: 50%;
-    height: 10vh;
+    background-color: #c4a1409d;
+    height: max-content;
+    margin: auto -1rem;
+}
+#about-us p {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 1.3rem 6em;
+    font-size: 1.4rem;
+    color: #ffededbd;
+    letter-spacing: 1.1px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+#about-us small {
+    display: flex;
+    color: #ffededbd;
+    justify-content: center;
 }
 
 button {
@@ -163,26 +179,24 @@ footer {
 }
 .container-footer {
     background-image: url(./imgs/footer-image.png);
-    width: 130%;
-    height: 180%;
+    width: 100%;
+    height: 170%;
+    display: flex;
     background-position: left center;
     background-size:cover;
     background-repeat: no-repeat;
-    
 }
 .container-footer a {   
-    display: flex;
-    justify-content: center;
-    margin: 2.2rem 0;
-    text-decoration:none ;
+    margin: 1.2rem auto;
+    text-decoration:none;
 }
 a i:first-child {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 a i {
     font-size: 1.8rem;
     display: flex;
-    margin-bottom: 4rem;
+    margin-bottom: 3.3rem;
     align-items: center;
     color: #9da17a;
     
@@ -200,7 +214,7 @@ a i {
     }
 }
 
-@media only screen and (width < 700px) {
+@media only screen and (width < 750px) {
     .middle-page-section {
         text-align: center;
         margin: 1.2rem auto;
