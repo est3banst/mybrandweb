@@ -1,6 +1,6 @@
 const modal = document.getElementById('about-us');
 const usbut = document.getElementById('us-button');
-
+const mobmenu = document.querySelector('.menu-mobile-container')
 const navmenu = document.querySelector('.nav-menu');
 
 
@@ -10,7 +10,7 @@ function Toggle() {
     modal.style.top = '15%';
     modal.style.zIndex = '500';
     
-    usbut.style.opacity = '.3'
+    usbut.style.opacity = '.3';
     
     modal.hidden == true ? modal.hidden = false : modal.hidden = true;
     
