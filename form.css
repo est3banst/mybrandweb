@@ -1,0 +1,40 @@
+.form-container {
+    width: 70%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-image: url(./imgs/why-us.jpg);
+    background-size: contain;
+}
+.form-container input {
+    padding: .7em 4px;
+    margin: 2px 1em;
+    font-size: 1em;
+    border-radius: 1em;
+    background-color: antiquewhite;
+}
+.form-container h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 3px 0;
+    margin: 1em auto;
+    color: antiquewhite;
+    -webkit-box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
+    box-shadow: 5x 10px 0px 1px rgba(0,0,0,0.75);
+}
+textarea {
+    padding-bottom: 3rem;
+    padding-top: .5em;
+    margin: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 1em;
+}
+button {
+    padding: 8px 3.5rem;
+    border-radius: 1.3em;
+    margin: 0 auto;
+}

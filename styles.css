@@ -176,12 +176,14 @@ button svg:hover {
 .social-media {
     width: 75%;
     height: 35%;
-    margin: auto;
+    margin: 1.3rem auto .3rem;
 }
 .social-media a {
     display: inline;
-    margin: 1.4rem 6px;
+    margin: auto 6px;
     padding: 1.3rem 20%;
+    background: #fcfdf9;
+    border-radius: 10%;
 }
 
 footer {
