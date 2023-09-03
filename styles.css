@@ -1,23 +1,19 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Kanit, Times, serif;
     background-color: #e9d18e9d;
     scroll-behavior: smooth;
 }
 .container-header {
-    display: flex;
+    display: inline;
     margin: 1rem auto;
-    padding: 3rem auto;
+    text-align: center;
+    padding: 1.4rem auto;
     width: 90%;
-    height: 10vh;
 }
-
-.container-header img {
-    width: 50%;
-    position: fixed;
-    z-index: 100;
-    padding: 0 1.2rem;
+.responsive-container-menu {
+    display: none;
 }
 
 .nav-menu {
@@ -35,57 +31,39 @@ ul li {
     margin-bottom: 1.3rem;
     padding: .3rem .4rem;
     box-shadow: 5px 2px 8px 3px #010202;
-    width: 50%;
-    background-color: #c4a1409d;
+    width: 80%;
+    background-color:  #e9d18e9d;;
     height: max-content;
-    margin: auto -1rem;
+    margin: auto ;
 }
-#about-us p {
+#about-us h2 {
     text-align: center;
-    margin: 3rem 0;
+    margin: 1rem 0;
     padding: 1.3rem 6em;
     font-size: 1.4rem;
-    color: #ffededbd;
+    color: #131313bd;
     letter-spacing: 1.1px;
     font-family: 'Bebas Neue', sans-serif;
 }
 #about-us small {
     display: flex;
-    color: #ffededbd;
+    color: #0e0d0dbd;
     justify-content: center;
 }
 
-button {
-    background-color: #ffffff00;
-    color: #50505062;
+.nav-menu a {
+    color: #03030362;
+    padding: 8px;
+    border: 1px solid #03030362;
     font-weight: bolder;
-    width: 9.5em;
-    height: 2.9em;
-    border: #010202 0.3px solid;
-    border-radius: 11px;
+    text-decoration: none;
     text-align: right;
     transition: all 0.6s ease;
     font-family: Kanit, 'sans-serif';
-    -webkit-box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
-    box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 15px 15px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 15px 15px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 5px -1px rgba(0,0,0,0.75);
 
-}
-button:hover {
-    cursor: pointer;
-    color: #08080e;
-    transform: translateY(4px);
-}
-button svg {
-    width: 1.5em;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    transition: all 0.6s ease;
-}
-button svg:hover {
-    transform: translateX(3px);
-    color: #08080e;
 }
 
 .hero-image {
@@ -119,7 +97,7 @@ button svg:hover {
     object-fit: cover;
 }
 
-.middle-page-section p {
+.middle-page-section h3 {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: bolder;
     color: #000000b0;
@@ -133,25 +111,15 @@ button svg:hover {
     margin: 1.4rem 0;
     font-family: Kanit, sans-serif;
     display: flex;
+    font-size: 1.4rem;
     justify-content: center;
-    -webkit-box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 15px 35px -1px rgba(0,0,0,0.75);
-    box-shadow: 5x 10px 0px 1px rgba(0,0,0,0.75);
-}
-.middle-page-section article:nth-child(3) {
-    transform: translateX(1%);
-    overflow: hidden;
-}
-.middle-page-section article:nth-child(4) {
-    transform: translateX(-1%);
-    overflow: hidden;
-    
 }
 .middle-page-section article p {
-    padding: 3px 2rem;
+    padding: 3px .5rem;
     display: inline;
-    border-radius: 1em;
-    color: #080606be;
+    color: #252525;
+    background-color:#e9d18e9d; 
+    font-weight: bolder;
 }
 .carousel.slide {
     width: 100%;
@@ -172,6 +140,13 @@ button svg:hover {
 .carousel-control-next span, .carousel-control-prev span {
     padding: 1.5em;
     border-radius: 50%;
+}
+#wedo {
+    margin: 1rem 8px;
+    padding: 1rem 1.3rem;
+    background-color: #e9d18e9d;
+    background-image: linear-gradient(0deg, #FAD961 0%, #e9d18e9d 100%);
+    border: .5px solid #010202;
 }
 .social-media {
     width: 75%;
@@ -217,14 +192,31 @@ a i {
 }
 
 @media only screen and (width < 900px) {
-    .nav-menu ul{
-        display: flex;
-        flex-direction: column;
-        padding: 6px 0;
+    .nav-container {
+        display: none;
     }
-    ul {
-        width: 80%;
-        padding: 4px 2px;
+    .responsive-container-menu {
+        display: inline;
+        width: max-content;
+        top: 4px;
+        left:1em; 
+        position: absolute;
+        height: calc(max-content + 300px);
+        text-align: left;
+    }
+    .responsive-container-menu a {
+        display: flex;
+        margin: auto;
+        padding: .5rem 0 0;
+        text-decoration: none;
+        border-bottom: 1px solid #010202;
+    }
+    .responsive-container-menu h2 {
+        width: fit-content;
+    }
+    .responsive-container-menu i {
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
     }
     li button {
         width: 100%;
@@ -243,21 +235,16 @@ a i {
         text-align: center;
         margin: 1.2rem auto;
     }
-    .middle-page-section article p {
-        padding: 3px 0;
-    }
-    .middle-page-section article:nth-child(3) {
-        transform: translate(0);
-    }
-    .middle-page-section article:nth-child(4) {
-        transform: translate(0);
-    }
+    
     .carousel.slide {
         width: 100%
     }
     .carousel-item img {
         width: 100%;
         height: 100vh;
+    }
+    .social-media a {
+        width: 90%;
     }
     
 }

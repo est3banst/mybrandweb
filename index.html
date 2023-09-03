@@ -23,46 +23,39 @@
 <body>
     <header>
         <div class="container-header">
-            <img src="./imgs/martinez-heading.png" alt="">
-        
+            <h1>CARPINTERIA MARTINEZ</h1>
     </header>
     <section>
-      <div id="about-us" hidden="true">
-        <button id="exit-modal" onclick="exitModal()">
-          <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg>
-          <span>Back</span>
-        </button>
-        <p>
-          Más de 20 años de experiencia en el diseño y producción de mobiliario.
-          Nuestros productos se caracterizan por su bajo costo y facil mantenimiento.
-          Tu proyecto lo hacemos realidad!
-          
-        </p>
-        <small>CARPINTERIA MARTINEZ &COPY;</small>
-      
+      <div class="responsive-container-menu" >
+      <div class="icon-container">
+        <i onclick="Toggle()" class="fa-solid fa-bars"></i>
       </div>
+      <div class="menu-a-container" hidden="true">
+        <a href="#about-us">
+          <h2>NOSOTROS</h2>
+        </a>
+        <a href="#wedo">
+          <h2>QUE HACEMOS</h2>
+        </a>
+        <a href="./contacto.html">
+          <h2>CONTACTÁNOS</h2>
+        </a>
+      </div>
+      </div>
+      
     </section>
         <div class="nav-container">
           <nav class="nav-menu">
             <ul>
-                <li><a href="#"> 
-                    <button id="us-button" onclick="Toggle()">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                    </svg>
+                <li><a href="#about-us"> 
                    NOSOTROS
-                    </button>
                 </a></li>
-                <li><a href="#"><button>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                      </svg>QUÉ HACEMOS
-                </button></a></li>
-                <li><a href="./contacto.html"> <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
-                      </svg>CONTÁCTANOS
-                </button></a></li>
+                <li><a href="#wedo">
+                  QUÉ HACEMOS
+                </a></li>
+                <li><a href="./contacto.html"> 
+                  CONTÁCTANOS
+                </a></li>
               </ul>
         </nav>
         </div>
@@ -73,7 +66,7 @@
             </div>
         </figure>
         <section class="middle-page-section">
-            <p>¿Por qué elegirnos?</p>
+            <h3>¿Por qué elegirnos?</h3>
             <section>
               <p>Fabricamos mobiliario con maderas de origen sostenible, nuestro compromiso, 
                 además de con nuestros clientes, es con el planeta</p>
@@ -82,6 +75,16 @@
               <article><p>Diseños únicos</p></article>
             </section>
         </section>
+        <div id="about-us">
+        </button>
+        <h2>Nosotros...</h2>
+        <h3>
+          Más de 20 años de experiencia en el diseño y producción de mobiliario.
+          Nuestros productos se caracterizan por su bajo costo y facil mantenimiento.
+          Tu proyecto lo hacemos realidad!
+        </h3>
+        <small>CARPINTERIA MARTINEZ &COPY;</small>
+      </div>
             <div id="diseñosDePlacards" class="carousel slide">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#diseñosDePlacards" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -137,7 +140,16 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+              <div id="wedo">
+                <h2>
+                  Que hacemos ...
+                </h2>
+                <h3>
+                  Nos especializamos en el diseño de muebles de interior, placards, islas, camas, sillones, y muchas cosas más, el mueble que te falta o el que querés cambiar, lo hacemos personalizado acordé a tus necesidades   
+                </h3>
+              </div>
               <div class="social-media">
+                <h3>Nuestras redes..</h3>
                 <a href="https://www.instagram.com/muebleriamartinezz/" target="_blank">
                   <i class="fa-brands fa-instagram"></i>
               </a>
