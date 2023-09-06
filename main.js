@@ -9,7 +9,7 @@ function setStyle() {
     iconmenu.style.position = 'fixed';
     navmenu.style.backgroundColor = 'antiquewhite';
     navmenu.style.height = '80vh'
-    navmenu.style.width = '30%'
+    navmenu.style.width = 'maxcontent'
     navmenu.style.top = '5%'
     navmenu.style.left = '0'
 }
