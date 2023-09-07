@@ -170,17 +170,14 @@ footer {
 }
 
 .container-footer {
-    background-image: url(./imgs/footer-image.png);
-    width: 100%;
-    height: 90%;
-    display: flex;
-    background-position: left center;
-    background-size:cover;
-    background-repeat: no-repeat;
+   width: 100%;
+   height: 120%;
 }
-.container-footer a {   
-    margin: 1.2rem auto;
-    text-decoration:none;
+.container-footer img {
+    width: 100%;
+    height: 50%;
+    padding: 0 0 1.5rem 12px;
+    margin: 0 auto;
 }
 a i:first-child {
     margin-top: 1rem;
