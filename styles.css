@@ -6,11 +6,16 @@ body {
     scroll-behavior: smooth;
 }
 .container-header {
-    display: inline;
-    margin: 1rem auto;
+    display: flex;
+    margin: .7rem;
+    justify-content: center;
+    text-align: left;
+    padding: auto;
+    width: 70%;
+}
+.title-page {
+    padding: 0 1rem;
     text-align: center;
-    padding: 1.4rem auto;
-    width: 90%;
 }
 .responsive-container-menu {
     display: none;
@@ -163,7 +168,16 @@ ul li {
     background: #fcfdf9;
     border-radius: 10%;
 }
-
+.wp-anchor {
+    position: fixed;
+    left: 70%;
+    z-index: 999;
+    top: 0;
+}
+.wp-anchor i {
+    font-size: 3rem;
+    margin: auto;
+}
 footer {
     height: 30%;
     width: 100%;
@@ -198,7 +212,7 @@ a i {
     .responsive-container-menu {
         display: inline;
         width: max-content;
-        top: 4px;
+        top: 2%;
         left:1em; 
         position: absolute;
         height: calc(max-content + 300px);
