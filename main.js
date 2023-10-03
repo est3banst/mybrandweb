@@ -9,10 +9,10 @@ function setStyle() {
     navmenu.style.position = 'fixed';
     iconmenu.style.position = 'fixed';
     navmenu.style.backgroundColor = 'antiquewhite';
-    navmenu.style.height = '80vh'
-    navmenu.style.width = 'maxContent'
+    navmenu.style.height = '30vh'
+    navmenu.style.width = '40%'
     navmenu.style.top = '5%'
-    navmenu.style.left = '0'
+    navmenu.style.left = '10px'
 }
 
 function Toggle() {

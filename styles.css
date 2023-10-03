@@ -32,7 +32,7 @@ ul li {
     padding: .3rem .4rem;
     box-shadow: 5px 2px 8px 3px #010202;
     width: 80%;
-    background-color:  #e9d18e9d;;
+    background-color:#e9d18e9d;
     height: max-content;
     margin: auto ;
 }
@@ -207,9 +207,14 @@ a i {
     .responsive-container-menu a {
         display: flex;
         margin: auto;
-        padding: .5rem 0 0;
+        color: #010202;
+        justify-content: center;
+        padding: 1rem 0;
         text-decoration: none;
         border-bottom: 1px solid #010202;
+    }
+    .menu-a-container small {
+        text-align: center;
     }
     .responsive-container-menu h2 {
         width: fit-content;
