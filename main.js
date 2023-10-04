@@ -3,6 +3,29 @@ const iconmenu = document.querySelector('.icon-container');
 const navmenu = document.querySelector('.menu-a-container');
 const button = document.querySelector('.send-form');
 
+
+function validarFormulario() {
+const name = document.contactForm.Name;
+const email = document.contactForm.Email;
+const celular = document.contactForm.Telefono;
+const mensj = document.contactForm.message;
+
+    if (name.value == "") {
+        alert("Por favor ingrese su nombre");
+    }
+    else if (email.value == "") {
+        alert("Por favor ingrese su correo");
+    }
+    else if (celular.value == "") {
+        alert("Por favor ingrese su número");
+    }
+    else if (mensj.value == "") {
+        alert("Por favor ingrese su mensaje")
+    }
+    return;
+}
+
+
 function setStyle() {
     navmenu.style.color = "black";
     navmenu.style.zIndex = '600';

@@ -13,6 +13,11 @@ body {
     padding: auto;
     width: 70%;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .title-page {
     padding: 0 1rem;
     text-align: center;
@@ -170,7 +175,7 @@ ul li {
 }
 .wp-anchor {
     position: fixed;
-    left: 70%;
+    left: 75%;
     z-index: 999;
     top: 0;
 }
