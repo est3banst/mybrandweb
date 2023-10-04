@@ -178,6 +178,7 @@ ul li {
     left: 75%;
     z-index: 999;
     top: 0;
+    cursor: pointer;
 }
 .wp-anchor i {
     font-size: 3rem;
